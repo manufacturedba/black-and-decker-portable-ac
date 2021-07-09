@@ -109,7 +109,7 @@ class Builder {
   }
 
   build() {
-    const message = [...head];
+    const message = [...HEAD];
 
     // 6th
     if (this.power === POWER.ON) {
