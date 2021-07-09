@@ -55,7 +55,7 @@ function to(bytes) {
       // Each bit starts with a pulse
       packet.push(PULSE);
 
-      if (Number(numBit)) {
+      if (Number(bit)) {
         packet.push(FILLED_PAUSE);
       } else {
         packet.push(EMPTY_PAUSE);
