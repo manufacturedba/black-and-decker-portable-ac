@@ -65,6 +65,8 @@ function to(bytes) {
 
   // Last pulse finishes the message
   packet.push(PULSE);
+
+  return packet;
 }
 
 module.exports = {
