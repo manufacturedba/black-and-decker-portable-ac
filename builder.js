@@ -151,7 +151,7 @@ class Builder {
 
     message.push(checksum(message))
 
-    return message.map(num => toBinary(num)).join('');
+    return message.map(toBinary);
   }
 }
 
