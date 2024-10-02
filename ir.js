@@ -22,7 +22,7 @@ function from(pulses) {
   let list = [];
   let byteBuffer = "";
 
-  for (var i = 4; i < pulses.length; i++) {
+  for (let i = 4; i < pulses.length; i++) {
     if (i % 2) {
       // Enjoy the silence
     } else {
@@ -32,12 +32,14 @@ function from(pulses) {
         byteBuffer += 0;
       }
 
-      if (!(current.length % 8)) {
+      if (!(byteBuffer.length % 8)) {
         list.push(byteBuffer);
         byteBuffer = "";
       }
     }
   }
+
+  return list;
 }
 
 /**
